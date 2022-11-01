@@ -3,8 +3,12 @@ hours = input("Enter hours: ")
 rate = input("Enter rate: ")
 
 # input is always string, so we have to convert to float
-hours = float(hours)
-rate = float(rate)
+try:
+    hours = float(hours)
+    rate = float(rate)
+except:
+    print("Error, please enter numeric input.")
+    quit()
 
 pay = hours * rate
 
