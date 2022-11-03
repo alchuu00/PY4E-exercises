@@ -1,4 +1,4 @@
-poem = open ("romeo.txt", "r")
+poem = open ("../chapter 9/romeo.txt", "r")
 words = []
 for line in poem:
     for word in line.split():
