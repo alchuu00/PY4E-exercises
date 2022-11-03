@@ -4,8 +4,8 @@ file = open(fname)
 for line in file:
     line = line.rstrip()
     if line.startswith("From "):
-        days = line.split()
-        days = days[2]
-        count[days] = count.get(days, 0) + 1
+        emails = line.split()
+        emails = emails[1]
+        count[emails] = count.get(emails, 0) + 1
 
 print(count)
